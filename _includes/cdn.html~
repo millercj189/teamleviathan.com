@@ -1,0 +1,10 @@
+<style>
+  @import "http://azryn.com/cdn/skeleton/2.0.4/skeleton.css";
+  @import "http://azryn.com/cdn/skeleton/2.0.4/normalize.css";
+  @import "{{ site.baseurl }}style.css";
+</style>
+
+<script
+   asyn defer
+   src="http://azryn.com/cdn/angular/2.0.0-alpha.23/angular2.min.js">
+</script>

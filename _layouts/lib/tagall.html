@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="pagemain">
+  <div class="container">
+    {% for post in site.posts %}
+      {% assign t = tag | first %}
+      {% assign posts = tag | last %}
+      <div>
+        <h5>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {{ post.date | date:"%h %d, %Y" }}
+        </h5>
+        <h6>
+          Tags: {% for tag in post.tags %}
+          <a href="/tags/{{ tag }}">{{ tag | upcase }}</a>&nbsp;
+          {% endfor %}
+        </h6>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+
+<article class="col-md-12">
+  <div class="center-block text-center">
+    <div class="ad-footer ">
+      <a href="#">
+        <img src="">Bottom Banner
+      </a>
+    </div>
+  </div>
+</article>

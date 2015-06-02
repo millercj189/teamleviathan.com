@@ -1,0 +1,67 @@
+## Site Settings
+name        : Team Leviathan
+title       : Team Leviathan
+description : "Team Leviathan is a professional Dota 2 Gaming Team consisting of Shredder, Shiibbyy, Jenkins, Newsham, and FlyingZebra."
+
+baseurl     :
+url         : "teamleviathan.com"
+keywords    : "team leviathan dota dota2 coach dotacoach professional gaming team shredder shiibbyy jenkins newshaw flyingzebra"
+
+encoding    : "utf-8"
+ngapp       : "azryn"
+
+
+
+
+## Social Networking
+social:
+  bitbucket   :
+  disqus      :
+  email       : teamleviathangaming@gmail.com
+  facebook    : LeviathanDota
+  github      :
+  gitlab      :
+  googleplus  :
+  googlesoc   :
+  gratipay    :
+  instagram   : LeviathanDota
+  kickstarter :
+  patreon     : LeviathanDota
+  paypal      :
+  rss         :
+  steam       :
+  tumbler     :
+  twitter     : LeviathanDota
+  twitchtv    : LeviathanDota
+  youtube     : UCSZt9YDmRPa-BKGEPbSXafA
+
+
+
+## Ruby Settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+sass:
+  sass_dir         : src/sass
+  style            : compressed
+  compile_in_place : true
+
+gems:
+ - jemoji
+ - jekyll-sitemap
+
+coderay:
+  coderay_tab_width: 2
+
+kramdown:
+  input       : GFM
+  use_coderay : true
+
+markdown:
+  redcarpet
+
+maruku:
+  use_tex: true

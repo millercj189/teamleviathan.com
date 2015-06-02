@@ -1,0 +1,68 @@
+---
+layout: default
+categories: global
+---
+
+
+  <article class="announcebar col-md-3">
+    <div class="row">
+      <div class="container">
+        <h4>Announcements</h4>
+        <hr class="hr-inverse">
+        {% for post in site.posts limit:3 %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+        <div>
+          {% if post.categories contains page.categories %}
+            <a href="{{ post.url }}">{{ post.title }}</a> {{ t | upcase }}
+            <h6>{{ post.date | date:"%h %d, %Y - %H:%M" }}</h6>
+          {% endif %}
+        </div>
+        {% endfor %}
+        <a class="pull-right" href="/tags/global/">See more</a>
+      </div>
+    </div>
+
+    <div class="row-fluid">
+      <div class="center-block text-center">
+        <div class="ad-sidebar">
+          <a href="#">
+            <img src="">Sidebanner
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="pagemain col-md-9">
+    <div class="container">
+      {% for post in site.posts %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+        <div>
+          {% if post.tags contains page.tags %}
+            <h5>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              {{ post.date | date:"%h %d, %Y - %H:%M" }}
+            </h5>
+            <h6>
+              Tags: {% for tag in page.tags %}
+              <a href="/tags/{{ tag }}">{{ tag | upcase }}</a>&nbsp;
+              {% endfor %}
+            </h6>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+
+<article class="col-md-12">
+  <div class="center-block text-center">
+    <div class="ad-banner">
+      <a href="#">
+        <img src="">Banner
+      </a>
+    </div>
+  </div>
+</article>
+

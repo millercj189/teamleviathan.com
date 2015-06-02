@@ -1,0 +1,56 @@
+---
+layout  : default
+comments: true
+ratings : true
+---
+
+<article class="page col-md-12">
+  <h2>{{ page.title }}</h2>
+  <section>
+    <img class="author-image pull-left" src="{{ page.image }}"/>
+    <div class="container">
+      <p>Author: {{ page.author }}
+      <p>{{ page.date | date:"%h %d, %Y - %H:%M" }}
+    </div>
+  </section>
+
+  <hr><br>
+  <div class="entry">
+    <div class="mrt-section" >
+      <div class="post">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
+      <hr>
+
+      <div class="pull-right">
+        {% include polldaddy.html %}
+      </div>
+      <div class="meta">
+        {% if page.tags.size > 0 %}
+          <div class="tags">
+            Tags: {% for tag in page.tags %}
+              <a href="/tags/{{ tag }}">{{ tag | upcase }}</a>&nbsp;
+            {% endfor %}
+
+          </div>
+        {% endif %}
+      </div>
+      <hr>
+
+      <article class="col-md-12">
+        <div class="center-block text-center">
+          <div class="ad-banner">
+            <a href="#">
+              <img src="">Banner
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <hr>
+      {% include disqus.html %}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+
+<article class="pagemain">
+    <div class="container">
+      <h2>
+        {% for tag in page.tags %}
+          <a href="/tags/{{ tag }}">{{ tag | upcase }}</a>&nbsp;
+        {% endfor %}
+      </h2>
+      <hr>
+      {% for post in site.posts %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+        <div>
+          {% if post.tags contains page.tags %}
+            <h5>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              {{ post.date | date:"%h %d, %Y - %H:%M" }}
+            </h5>
+          {% endif %}
+        </div>
+      {% endfor %}
+      <a class="pull-right" href="/tags/all/">See All</a>
+    </div>
+  </article>
+
+  <article class="col-md-12">
+    <div class="center-block text-center">
+      <div class="ad-banner">
+        <a href="#">
+          <img src="">Banner
+        </a>
+      </div>
+    </div>
+  </article>
+</article>
