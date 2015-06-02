@@ -1,15 +1,16 @@
 ## Site Settings
-name        : Team Leviathan
-title       : Team Leviathan
-description : "Team Leviathan is a professional Dota 2 Gaming Team consisting of Shredder, Shiibbyy, Jenkins, Newsham, and FlyingZebra."
-
+language    : "en"
+encoding    : "utf-8"
+ngapp       : "dflt"
 baseurl     :
 url         : "teamleviathan.com"
+
+name        : Team Leviathan
+title       : Team Leviathan
+author      : Team Leviathan
+
+description : "Team Leviathan is a professional Dota 2 Gaming Team consisting of Shredder, Shiibbyy, Jenkins, Newsham, and FlyingZebra."
 keywords    : "team leviathan dota dota2 coach dotacoach professional gaming team shredder shiibbyy jenkins newshaw flyingzebra"
-
-encoding    : "utf-8"
-ngapp       : "azryn"
-
 
 
 
@@ -46,7 +47,7 @@ exclude:
 
 sass:
   sass_dir         : src/sass
-  style            : minified
+  style            : compressed
   compile_in_place : true
 
 gems:
