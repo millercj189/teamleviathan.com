@@ -1,9 +1,0 @@
-
-
-
-/*
-//cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js
-//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.min.js
-//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js
-//cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.7/angular-css.js
-*/
