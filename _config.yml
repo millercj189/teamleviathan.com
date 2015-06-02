@@ -46,7 +46,7 @@ exclude:
 
 sass:
   sass_dir         : src/sass
-  style            : compressed
+  style            : minified
   compile_in_place : true
 
 gems:
