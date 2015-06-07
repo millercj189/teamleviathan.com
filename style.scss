@@ -17,6 +17,17 @@
 ;
 
 
+#footer
+{ background: black; }
+
+
+.card-container
+{ padding : 25px }
+
+.card-body
+{ background : white }
+
+
 .social-icon
 { height : 48px;
   width  : 48px }
@@ -39,10 +50,9 @@
   max-height   : 300px;
   width        : auto }
 
+
 #twitter-feed
-{ margin-left  : auto;
-  margin-right : auto;
-  margin : 25px; }
+{ margin : 25px auto }
 
 
 
